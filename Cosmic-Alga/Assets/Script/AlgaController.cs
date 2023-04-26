@@ -8,12 +8,12 @@ public class AlgaController : MonoBehaviour
     private float speed = 0.014f;
 
     public void GoX(){
-            if(position.x < 7)
+            if(position.x < 6.14)
                 position.x += speed;
     }
 
         public void BackX(){
-            if(position.x > -7)
+            if(position.x > -12.5)
                 position.x -= speed;
     }
 
