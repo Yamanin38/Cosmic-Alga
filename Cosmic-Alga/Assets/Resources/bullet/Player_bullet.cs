@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player_bullet : MonoBehaviour
 {
-    public float MoveSpeed = 20.0f; 
+    public int MoveSpeed = 20; 
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,6 @@ public class Player_bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(MoveSpeed * Time.deltaTime, 0, 0);
+        transform.Translate(Vector3.up *MoveSpeed * Time.deltaTime);
     }
 }
